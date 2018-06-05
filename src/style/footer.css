@@ -1,0 +1,9 @@
+#footerDiv {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(227, 117, 231);
+}
+#footer {
+    margin: 0;
+    padding: 23px 5px;
+}

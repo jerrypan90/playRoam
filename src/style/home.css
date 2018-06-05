@@ -1,0 +1,45 @@
+/* random user background image */
+.backgroundImageDiv {
+    display: inline-block;
+}
+#backgroundDiv {
+    background-color: black;
+    filter: brightness(50%);
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+/* div to vertical center searchbox */
+.spaceDiv {
+    width: 100vw;
+    height: 46vh;
+}
+/* searchbox */
+#searchBoxDiv {
+    text-align: center;
+}
+#searchBox {
+    width: 50vw;
+    height: 7vh;
+    font-size: 24px;
+}
+/* activity list */
+#activityListDiv {
+    background-color: lightblue;
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.eachActivityDiv {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    cursor: pointer;
+}
