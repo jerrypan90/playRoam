@@ -100,7 +100,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={'https://jerrypan90.github.io/playRoam/'}>
         <div>
           <div id="navBar">
             <Logo />
@@ -128,11 +128,11 @@ class App extends Component {
             <Login handleRegister={this.handleRegister} handleLogin={this.handleLogin} />
           </Modal>
 
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <PrivateRoute path={process.env.PUBLIC_URL + '/profile'} component={Profile} />
-          <PrivateRoute path={process.env.PUBLIC_URL + '/activities/:id'} component={Activity} />
-          <Route path={process.env.PUBLIC_URL + '/joined'} component={Joined} />
-          <Route path={process.env.PUBLIC_URL + '/created'} component={Created} />
+          <Route exact path='/' component={Home} />
+          <PrivateRoute path='/profile' component={Profile} />
+          <PrivateRoute path='/activities/:id' component={Activity} />
+          <Route path='/joined' component={Joined} />
+          <Route path='/created' component={Created} />
           <Footer />
         </div>
       </Router>
