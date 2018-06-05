@@ -17,7 +17,7 @@ class Background extends Component {
 class List extends Component {
   render() {
     return (
-      <Link to={`activities/${this.props.id}`}>
+      <Link to={`${process.env.PUBLIC_URL}/activities/${this.props.id}`}>
         <div className='eachActivityDiv'>
           <h3>{this.props.title}</h3>
           <p>Date: {this.props.date}</p>
