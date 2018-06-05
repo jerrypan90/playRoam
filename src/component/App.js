@@ -100,7 +100,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename={'https://jerrypan90.github.io/playRoam/'}>
+      <Router basename={'/playRoam'}>
         <div>
           <div id="navBar">
             <Logo />
